@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --color-primary: #d97706;
+  /* Amber 600 */
+  --color-secondary: #f59e0b;
+  /* Amber 500 */
+  --color-dark: #1c1917;
+  /* Stone 900 */
+  --color-light: #fafaf9;
+  /* Stone 50 */
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-stone-900 antialiased;
+  }
+}
